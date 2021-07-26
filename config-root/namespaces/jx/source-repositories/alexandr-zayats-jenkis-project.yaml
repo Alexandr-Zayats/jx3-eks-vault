@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: Alexandr-Zayats
+    provider: github
+    repository: jenkis-project
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: alexandr-zayats-jenkis-project
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/Alexandr-Zayats/jenkis-project.git
+  org: Alexandr-Zayats
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkis-project
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/Alexandr-Zayats/jenkis-project
